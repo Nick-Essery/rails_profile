@@ -1,0 +1,234 @@
+#my-paragraph {
+    color: aqua;
+    font-size: 18px;
+}
+
+p2 {
+    color: bisque;
+    font-size: 16px;
+}
+
+.fs-2 {
+    color:cadetblue
+}
+
+#Headshot {
+    float: left;
+    width: 40%;
+    height: 50%;
+    margin: 2%;
+    padding: 2%;
+}
+
+.display-2 {
+    text-align: center;
+}
+
+.Microwave {
+    width: 40%;
+    height: 50%;
+}
+
+.lead {
+    margin: 2%;
+}
+
+.Hobby {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+
+#MyHobbies {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#MyMusic {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#ConnCollege {
+    margin: 2% 5%;
+    width: 90%;
+    height: 90%;
+}
+
+body {
+    background-color: #121212;
+}
+
+/* Start of Hobbies_CSS CSS code */
+
+#hobby_body {
+    color: #CDD1D5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Recreating the navbar */
+
+.mynavbox{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #2b2b2b;
+    color: #dee2e6;
+    padding: 1.2%;
+    transform: translate(-1%, -10%);
+    z-index: 50;
+}
+
+.mynavbar {
+    font-size: 20px;
+}
+
+.nav_link {
+    font-size: 16px;
+    color: #dee2e6;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 1%;
+}
+
+/* Click is a js function, so we hover link and create a dropbox */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 50;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border: solid, rgba(255, 255, 255, 0.15);
+    border-width: 0.8;
+    border-radius: 6px;
+    width: 120px;
+    padding: 12px 16px;
+    z-index: 50;
+}
+
+/* Creating a line like in the bootstrap dropdown */
+.line{
+    width: 152px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    right: 16px;
+    }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #2b2b2b;
+    z-index: 50;
+}
+
+  #mydroptext {
+    font-size: 16px;
+    color: gray;
+  }
+
+  #mydroptext:hover {
+    color: #dee2e6;
+  }
+
+  /* Start of recreating the alert, z-index and position matter so it will be behind the dropdown */
+  .myalert {
+    position: relative;
+    z-index: 1;
+    background-color: #362A02;
+    width: 98.5%;
+    height: 50%;
+    padding: 16px;
+    border-radius: 5px;
+    border-width: 0.8px;
+    border-style: solid;
+    border-color: #D5AB00;
+    transform: translate(-0.5%, -5%);
+}
+  
+  #alert_text {
+    font-size: 16px;
+    color: #ffda6a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #alert_link{
+    font-size: 16px;
+    color: #ffda6a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  #hobby_header {
+    font-size: 52px;
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Storing the 3 columns in a row grid, used flex because I found it easier */
+
+  .row_div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .hobbies_div {
+    margin: 10px;
+    padding: 10px;
+    width: 29%;
+  }
+
+  .sm-hobby_header {
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .hobby_text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  /* When we change the screen to a specific size, change parameters to have columns stack at full width */
+  @media (max-width: 768px) {
+    .row_div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .hobbies_div {
+        margin: 10px;
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+      }
+  }
+
+  /* Recreating the bootstrap button */
+  .music_button {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-top: 8px;
+    font-size: 14px; 
+    font-weight: 100;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+  .music_button:hover {
+    background-color: #0056b3;
+  }
+
+  #music_link {
+    color: #fff;
+    text-decoration: none;
+  }

@@ -1,0 +1,31 @@
+<HTML lang="eng" data-bs-theme="dark">
+<div class="container">
+				
+			<div class="jumbotron">
+				<h1 class="display-4">Welcome to my personal web page!</h1>
+				<p id = "paragraph1" class="lead"> My name is Nick Essery, a current student at Connecticut College </p>
+				<br>
+				<p id = "my-paragraph">If you would like to learn more about me, please feel free to click any of the links below!</p>
+				<hr class="my-4">
+				
+				<div class="container-fluid">
+					<div class="container text-center">
+						<div class="row align-items-start">
+						  <div class="col">
+							<p2>This link leads to my work portfolio</p>
+							<a id="moreButton" class="btn btn-primary btn-lg" href="<%= portfolio_url %>" role="button"><i class="fas fa-briefcase"></i> My portfolio page</a>  
+						  </div>
+						  <div class="col">
+							<p2>This link leads to more about myself</p>
+							<a id="moreButton" class="btn btn-primary btn-lg" href="<%= about_url %>" role="button"><i class="fa-solid fa-user"></i> More about me</a> 
+						  </div>
+						</div>
+					  </div>
+					<br>
+				</div> 
+			</div>
+		</div>
+
+
+        <%= image_tag("Conn.jpg", id: "ConnCollege") %>
+
